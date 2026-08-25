@@ -4,8 +4,17 @@ import fs from "node:fs/promises";
 const CONFIG=JSON.parse(await fs.readFile("config.json","utf8"));
 const OPTINS=JSON.parse(await fs.readFile(CONFIG.privacy.optInFile,"utf8"));
 
-function norm(s){return String(s??"").trim().toLowerCase();}
+function norm(s){return String(s??"").trim().replace(/\s+/g," ").toLowerCase();}
 const optMap=new Map((OPTINS.players||[]).map(p=>[norm(p.playHubName),p]));
+
+function findOptIn(player){
+  const names=[player.playHubName,...(player.aliases||[])];
+  for(const name of names){
+    const match=optMap.get(norm(name));
+    if(match) return match;
+  }
+  return null;
+}
 
 const snapshot=await loadPrivateSnapshot();
 const previous=await fs.readFile("public/data/rankings.json","utf8").then(JSON.parse).catch(()=>null);
@@ -13,7 +22,7 @@ const prevByName=new Map((previous?.players||[]).filter(p=>p.optedIn&&p.name).ma
 
 const publicPlayers=snapshot.players.map((p,i)=>{
   const rank=i+1;
-  const oi=optMap.get(norm(p.playHubName));
+  const oi=findOptIn(p);
   if(!oi) return {rank,optedIn:false};
   const name=(oi.publicName||p.playHubName).trim();
   return {

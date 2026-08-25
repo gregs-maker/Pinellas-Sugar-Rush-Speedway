@@ -13,7 +13,7 @@ const CONFIG=JSON.parse(await fs.readFile("config.json","utf8"));
 const OPTINS=JSON.parse(await fs.readFile(CONFIG.privacy.optInFile,"utf8"));
 const optMap=new Map((OPTINS.players||[]).map(p=>[norm(p.playHubName),p]));
 
-function norm(s){return String(s??"").trim().toLowerCase();}
+function norm(s){return String(s??"").trim().replace(/\s+/g," ").toLowerCase();}
 function isoDate(d){return d.toISOString().slice(0,10);}
 function daysAgo(days){const d=new Date();d.setUTCDate(d.getUTCDate()-days);return d;}
 function nameHas(name,patterns){const n=norm(name);return patterns.some(p=>n.includes(norm(p)));}
@@ -52,6 +52,7 @@ function getPlayer(players,key,name){
     players.set(key,{
       key,
       playHubName:name||"Unknown",
+      aliases:new Set(name?[name]:[]),
       rating:CONFIG.startingRating,
       wins:0,losses:0,draws:0,
       gameWins:0,gameLosses:0,
@@ -60,10 +61,13 @@ function getPlayer(players,key,name){
       leagueEventIds:new Set(),
       opponents:new Set()
     });
-  } else if(name && players.get(key).playHubName==="Unknown"){
-    players.get(key).playHubName=name;
   }
-  return players.get(key);
+  const player=players.get(key);
+  if(name){
+    player.aliases.add(name);
+    if(player.playHubName==="Unknown") player.playHubName=name;
+  }
+  return player;
 }
 async function allStoreEvents(storeId,startDate,endDate){
   const out=[];
@@ -105,6 +109,15 @@ function publicPreviousMap(previous){
 async function readPrevious(){
   try{return JSON.parse(await fs.readFile("public/data/rankings.json","utf8"))}
   catch{return null}
+}
+
+function findOptIn(player){
+  const names=[player.playHubName,...(player.aliases||[])];
+  for(const name of names){
+    const match=optMap.get(norm(name));
+    if(match) return match;
+  }
+  return null;
 }
 
 async function main(){
@@ -198,7 +211,9 @@ async function main(){
       eligibilityNote:"Set Championships and prereleases count for rating but not league-event eligibility."
     },
     players:eligiblePlayers.map(p=>({
+      playerKey:p.key,
       playHubName:p.playHubName,
+      aliases:[...p.aliases],
       rating:p.rating,
       wins:p.wins,losses:p.losses,draws:p.draws,
       gameWins:p.gameWins,gameLosses:p.gameLosses,
@@ -216,7 +231,7 @@ async function main(){
   const prevMap=publicPreviousMap(previous);
   const publicPlayers=privateSnapshot.players.map((p,i)=>{
     const rank=i+1;
-    const oi=optMap.get(norm(p.playHubName));
+    const oi=findOptIn(p);
     if(!oi) return {rank,optedIn:false};
     const publicName=(oi.publicName||p.playHubName).trim();
     return {
