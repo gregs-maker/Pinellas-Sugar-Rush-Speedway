@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T19:05:32.949Z",
+  "generatedAt": "2026-08-25T19:41:12.213Z",
   "preview": false,
   "window": {
     "start": "2026-07-14",
@@ -90,7 +90,7 @@
       "optedIn": true,
       "name": "Inkchantress (Ashley)",
       "rating": 1488,
-      "previousRank": null,
+      "previousRank": 15,
       "matches": {
         "w": 17,
         "l": 19,
@@ -163,6 +163,12 @@
   ],
   "diagnostics": {
     "eligiblePlayers": 29,
-    "optedInEligiblePlayers": 1
+    "optedInEligiblePlayers": 1,
+    "events": 32,
+    "totalRounds": 123,
+    "totalRatedMatches": 844,
+    "skippedByes": 52,
+    "skippedMissingIdentity": 0,
+    "fetchFailures": 0
   }
 }
