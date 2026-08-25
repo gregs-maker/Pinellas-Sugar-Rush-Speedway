@@ -24,9 +24,9 @@
     "eligibilityNote": "Set Championships and prereleases count for rating but not league-event eligibility."
   },
   "highScore": {
-    "rank": 5,
-    "name": "Mark",
-    "rating": 1617
+    "rank": 4,
+    "name": "Greg - Vampire Potato",
+    "rating": 1618
   },
   "players": [
     {
@@ -43,7 +43,22 @@
     },
     {
       "rank": 4,
-      "optedIn": false
+      "optedIn": true,
+      "name": "Greg - Vampire Potato",
+      "rating": 1618,
+      "previousRank": null,
+      "matches": {
+        "w": 30,
+        "l": 13,
+        "d": 0
+      },
+      "games": {
+        "w": 62,
+        "l": 32
+      },
+      "leagueEvents": 11,
+      "ratedEvents": 15,
+      "ratedMatches": 43
     },
     {
       "rank": 5,
@@ -124,7 +139,7 @@
       "optedIn": true,
       "name": "Sarah",
       "rating": 1483,
-      "previousRank": null,
+      "previousRank": 16,
       "matches": {
         "w": 4,
         "l": 6,
@@ -193,6 +208,6 @@
   ],
   "diagnostics": {
     "eligiblePlayers": 29,
-    "optedInEligiblePlayers": 3
+    "optedInEligiblePlayers": 4
   }
 }
