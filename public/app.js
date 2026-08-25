@@ -1,5 +1,11 @@
 const $=s=>document.querySelector(s);
-const data=await fetch('./data/rankings.json').then(r=>r.json());
+const data=await fetch(`./data/rankings.json?v=${Date.now()}`,{
+  cache:'no-store',
+  headers:{'Cache-Control':'no-cache'}
+}).then(r=>{
+  if(!r.ok) throw new Error(`Could not load rankings (${r.status})`);
+  return r.json();
+});
 const list=$('#leaderboard'), toggle=$('#anonToggle');
 const hi=data.highScore || data.players.find(p=>p.optedIn) || null;
 $('#highScore').textContent=hi?.rating!=null?String(hi.rating).padStart(5,'0'):'-----';
