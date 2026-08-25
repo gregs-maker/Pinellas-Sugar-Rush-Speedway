@@ -24,14 +24,29 @@
     "eligibilityNote": "Set Championships and prereleases count for rating but not league-event eligibility."
   },
   "highScore": {
-    "rank": 4,
-    "name": "Greg - Vampire Potato",
-    "rating": 1618
+    "rank": 1,
+    "name": "Kobac",
+    "rating": 1634
   },
   "players": [
     {
       "rank": 1,
-      "optedIn": false
+      "optedIn": true,
+      "name": "Kobac",
+      "rating": 1634,
+      "previousRank": null,
+      "matches": {
+        "w": 21,
+        "l": 6,
+        "d": 2
+      },
+      "games": {
+        "w": 43,
+        "l": 18
+      },
+      "leagueEvents": 8,
+      "ratedEvents": 9,
+      "ratedMatches": 29
     },
     {
       "rank": 2,
@@ -136,22 +151,7 @@
     },
     {
       "rank": 16,
-      "optedIn": true,
-      "name": "Sarah",
-      "rating": 1483,
-      "previousRank": 16,
-      "matches": {
-        "w": 4,
-        "l": 6,
-        "d": 0
-      },
-      "games": {
-        "w": 9,
-        "l": 12
-      },
-      "leagueEvents": 3,
-      "ratedEvents": 3,
-      "ratedMatches": 10
+      "optedIn": false
     },
     {
       "rank": 17,
