@@ -50,7 +50,7 @@
       "optedIn": true,
       "name": "Mark",
       "rating": 1617,
-      "previousRank": null,
+      "previousRank": 5,
       "matches": {
         "w": 46,
         "l": 26,
