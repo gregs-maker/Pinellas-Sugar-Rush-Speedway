@@ -23,7 +23,11 @@
     "minimumRatedMatches": 8,
     "eligibilityNote": "Set Championships and prereleases count for rating but not league-event eligibility."
   },
-  "highScore": null,
+  "highScore": {
+    "rank": 15,
+    "name": "Inkchantress (Ashley)",
+    "rating": 1488
+  },
   "players": [
     {
       "rank": 1,
@@ -83,7 +87,22 @@
     },
     {
       "rank": 15,
-      "optedIn": false
+      "optedIn": true,
+      "name": "Inkchantress (Ashley)",
+      "rating": 1488,
+      "previousRank": null,
+      "matches": {
+        "w": 17,
+        "l": 19,
+        "d": 3
+      },
+      "games": {
+        "w": 36,
+        "l": 43
+      },
+      "leagueEvents": 10,
+      "ratedEvents": 14,
+      "ratedMatches": 39
     },
     {
       "rank": 16,
@@ -144,6 +163,6 @@
   ],
   "diagnostics": {
     "eligiblePlayers": 29,
-    "optedInEligiblePlayers": 0
+    "optedInEligiblePlayers": 1
   }
 }
