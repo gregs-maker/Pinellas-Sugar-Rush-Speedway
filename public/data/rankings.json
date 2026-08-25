@@ -24,9 +24,9 @@
     "eligibilityNote": "Set Championships and prereleases count for rating but not league-event eligibility."
   },
   "highScore": {
-    "rank": 15,
-    "name": "Inkchantress (Ashley)",
-    "rating": 1488
+    "rank": 4,
+    "name": "Greg - Vampire Potato",
+    "rating": 1618
   },
   "players": [
     {
@@ -43,7 +43,22 @@
     },
     {
       "rank": 4,
-      "optedIn": false
+      "optedIn": true,
+      "name": "Greg - Vampire Potato",
+      "rating": 1618,
+      "previousRank": null,
+      "matches": {
+        "w": 30,
+        "l": 13,
+        "d": 0
+      },
+      "games": {
+        "w": 62,
+        "l": 32
+      },
+      "leagueEvents": 11,
+      "ratedEvents": 15,
+      "ratedMatches": 43
     },
     {
       "rank": 5,
@@ -163,12 +178,6 @@
   ],
   "diagnostics": {
     "eligiblePlayers": 29,
-    "optedInEligiblePlayers": 1,
-    "events": 32,
-    "totalRounds": 123,
-    "totalRatedMatches": 844,
-    "skippedByes": 52,
-    "skippedMissingIdentity": 0,
-    "fetchFailures": 0
+    "optedInEligiblePlayers": 2
   }
 }
