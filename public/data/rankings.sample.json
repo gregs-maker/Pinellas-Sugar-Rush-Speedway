@@ -1,0 +1,418 @@
+{
+  "generatedAt": "2026-08-25T13:00:00-04:00",
+  "preview": true,
+  "window": {
+    "weeks": 6
+  },
+  "stores": [
+    "Game-O-Storus",
+    "Warehouse 51 Games",
+    "Kitchen Table Games",
+    "Public Assembly",
+    "Critical Hit Games St Petersburg",
+    "Phoenix Emporium Games & Collectibles",
+    "Emerald City Comics"
+  ],
+  "players": [
+    {
+      "rank": 1,
+      "name": "PixelMage",
+      "optedIn": true,
+      "rating": 1684,
+      "previousRank": 3,
+      "matches": {
+        "w": 18,
+        "l": 4,
+        "d": 1
+      },
+      "games": {
+        "w": 41,
+        "l": 14
+      },
+      "leagueEvents": 5,
+      "ratedEvents": 7,
+      "bestWin": "2\u20131 over a 1721-rated opponent",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 2,
+      "name": null,
+      "optedIn": false,
+      "rating": 1651,
+      "previousRank": 1,
+      "matches": {
+        "w": 17,
+        "l": 5,
+        "d": 0
+      },
+      "games": {
+        "w": 39,
+        "l": 17
+      },
+      "leagueEvents": 5,
+      "ratedEvents": 7,
+      "bestWin": "",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 3,
+      "name": "InkRunner",
+      "optedIn": true,
+      "rating": 1612,
+      "previousRank": 2,
+      "matches": {
+        "w": 14,
+        "l": 5,
+        "d": 2
+      },
+      "games": {
+        "w": 33,
+        "l": 17
+      },
+      "leagueEvents": 4,
+      "ratedEvents": 6,
+      "bestWin": "2\u20131 over a 1649-rated opponent",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 4,
+      "name": "LoreByte",
+      "optedIn": true,
+      "rating": 1599,
+      "previousRank": 5,
+      "matches": {
+        "w": 13,
+        "l": 6,
+        "d": 0
+      },
+      "games": {
+        "w": 31,
+        "l": 16
+      },
+      "leagueEvents": 4,
+      "ratedEvents": 6,
+      "bestWin": "2\u20131 over a 1636-rated opponent",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 5,
+      "name": null,
+      "optedIn": false,
+      "rating": 1581,
+      "previousRank": 4,
+      "matches": {
+        "w": 13,
+        "l": 6,
+        "d": 0
+      },
+      "games": {
+        "w": 29,
+        "l": 18
+      },
+      "leagueEvents": 4,
+      "ratedEvents": 6,
+      "bestWin": "",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 6,
+      "name": "QuestMaster",
+      "optedIn": true,
+      "rating": 1572,
+      "previousRank": 8,
+      "matches": {
+        "w": 12,
+        "l": 6,
+        "d": 2
+      },
+      "games": {
+        "w": 29,
+        "l": 15
+      },
+      "leagueEvents": 3,
+      "ratedEvents": 5,
+      "bestWin": "2\u20131 over a 1609-rated opponent",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 7,
+      "name": "CardCadet",
+      "optedIn": true,
+      "rating": 1543,
+      "previousRank": 7,
+      "matches": {
+        "w": 11,
+        "l": 7,
+        "d": 1
+      },
+      "games": {
+        "w": 26,
+        "l": 18
+      },
+      "leagueEvents": 4,
+      "ratedEvents": 6,
+      "bestWin": "2\u20131 over a 1580-rated opponent",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 8,
+      "name": "MouseMage",
+      "optedIn": true,
+      "rating": 1537,
+      "previousRank": 9,
+      "matches": {
+        "w": 10,
+        "l": 7,
+        "d": 2
+      },
+      "games": {
+        "w": 24,
+        "l": 20
+      },
+      "leagueEvents": 3,
+      "ratedEvents": 5,
+      "bestWin": "2\u20131 over a 1574-rated opponent",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 9,
+      "name": null,
+      "optedIn": false,
+      "rating": 1518,
+      "previousRank": 6,
+      "matches": {
+        "w": 10,
+        "l": 8,
+        "d": 1
+      },
+      "games": {
+        "w": 23,
+        "l": 20
+      },
+      "leagueEvents": 4,
+      "ratedEvents": 6,
+      "bestWin": "",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 10,
+      "name": "SteelInk",
+      "optedIn": true,
+      "rating": 1492,
+      "previousRank": 10,
+      "matches": {
+        "w": 9,
+        "l": 7,
+        "d": 1
+      },
+      "games": {
+        "w": 22,
+        "l": 19
+      },
+      "leagueEvents": 3,
+      "ratedEvents": 5,
+      "bestWin": "2\u20131 over a 1529-rated opponent",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 11,
+      "name": "ArcadeInk",
+      "optedIn": true,
+      "rating": 1489,
+      "previousRank": 13,
+      "matches": {
+        "w": 9,
+        "l": 8,
+        "d": 0
+      },
+      "games": {
+        "w": 21,
+        "l": 21
+      },
+      "leagueEvents": 3,
+      "ratedEvents": 5,
+      "bestWin": "2\u20131 over a 1526-rated opponent",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 12,
+      "name": null,
+      "optedIn": false,
+      "rating": 1478,
+      "previousRank": 11,
+      "matches": {
+        "w": 8,
+        "l": 8,
+        "d": 1
+      },
+      "games": {
+        "w": 20,
+        "l": 22
+      },
+      "leagueEvents": 3,
+      "ratedEvents": 5,
+      "bestWin": "",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 13,
+      "name": "MintChip",
+      "optedIn": true,
+      "rating": 1466,
+      "previousRank": 14,
+      "matches": {
+        "w": 8,
+        "l": 9,
+        "d": 0
+      },
+      "games": {
+        "w": 19,
+        "l": 24
+      },
+      "leagueEvents": 4,
+      "ratedEvents": 6,
+      "bestWin": "2\u20131 over a 1503-rated opponent",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 14,
+      "name": "DreamDeck",
+      "optedIn": true,
+      "rating": 1455,
+      "previousRank": 12,
+      "matches": {
+        "w": 7,
+        "l": 9,
+        "d": 1
+      },
+      "games": {
+        "w": 18,
+        "l": 25
+      },
+      "leagueEvents": 3,
+      "ratedEvents": 5,
+      "bestWin": "2\u20131 over a 1492-rated opponent",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 15,
+      "name": "StarLore",
+      "optedIn": true,
+      "rating": 1447,
+      "previousRank": 17,
+      "matches": {
+        "w": 7,
+        "l": 10,
+        "d": 0
+      },
+      "games": {
+        "w": 17,
+        "l": 26
+      },
+      "leagueEvents": 3,
+      "ratedEvents": 5,
+      "bestWin": "2\u20131 over a 1484-rated opponent",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 16,
+      "name": null,
+      "optedIn": false,
+      "rating": 1436,
+      "previousRank": 15,
+      "matches": {
+        "w": 6,
+        "l": 10,
+        "d": 1
+      },
+      "games": {
+        "w": 16,
+        "l": 27
+      },
+      "leagueEvents": 3,
+      "ratedEvents": 5,
+      "bestWin": "",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 17,
+      "name": "TurboInk",
+      "optedIn": true,
+      "rating": 1422,
+      "previousRank": 16,
+      "matches": {
+        "w": 6,
+        "l": 11,
+        "d": 0
+      },
+      "games": {
+        "w": 15,
+        "l": 29
+      },
+      "leagueEvents": 3,
+      "ratedEvents": 5,
+      "bestWin": "2\u20131 over a 1459-rated opponent",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 18,
+      "name": "CandyQuest",
+      "optedIn": true,
+      "rating": 1415,
+      "previousRank": 20,
+      "matches": {
+        "w": 5,
+        "l": 11,
+        "d": 1
+      },
+      "games": {
+        "w": 15,
+        "l": 30
+      },
+      "leagueEvents": 3,
+      "ratedEvents": 5,
+      "bestWin": "2\u20131 over a 1452-rated opponent",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 19,
+      "name": null,
+      "optedIn": false,
+      "rating": 1407,
+      "previousRank": 18,
+      "matches": {
+        "w": 5,
+        "l": 12,
+        "d": 0
+      },
+      "games": {
+        "w": 14,
+        "l": 31
+      },
+      "leagueEvents": 3,
+      "ratedEvents": 5,
+      "bestWin": "",
+      "status": "ACTIVE"
+    },
+    {
+      "rank": 20,
+      "name": "QuarterMaster",
+      "optedIn": true,
+      "rating": 1396,
+      "previousRank": 22,
+      "matches": {
+        "w": 5,
+        "l": 13,
+        "d": 0
+      },
+      "games": {
+        "w": 13,
+        "l": 33
+      },
+      "leagueEvents": 3,
+      "ratedEvents": 5,
+      "bestWin": "2\u20131 over a 1433-rated opponent",
+      "status": "ACTIVE"
+    }
+  ]
+}

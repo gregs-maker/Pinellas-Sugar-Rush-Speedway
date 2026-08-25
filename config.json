@@ -1,0 +1,61 @@
+{
+  "title": "Pinellas Sugar Rush Speedway",
+  "windowWeeks": 6,
+  "startingRating": 1500,
+  "kFactor": 24,
+  "gameShareWeight": 0.15,
+  "minimumLeagueEvents": 3,
+  "minimumRatedMatches": 8,
+  "stores": [
+    {
+      "storeId": 1879,
+      "name": "Game-O-Storus"
+    },
+    {
+      "storeId": 16859,
+      "name": "Warehouse 51 games"
+    },
+    {
+      "storeId": 2804,
+      "name": "Kitchen Table Games"
+    },
+    {
+      "storeId": 24093,
+      "name": "Public Assembly"
+    },
+    {
+      "storeId": 1025,
+      "name": "Critical Hit Games St Petersburg"
+    },
+    {
+      "storeId": 3834,
+      "name": "Phoenix Emporium Games & Collectibles"
+    },
+    {
+      "storeId": 1444,
+      "name": "Emerald City Comics"
+    }
+  ],
+  "eligibility": {
+    "setChampionshipPatterns": [
+      "set championship",
+      "set champ"
+    ],
+    "prereleasePatterns": [
+      "prerelease",
+      "pre-release",
+      "pre release"
+    ],
+    "specialEventsCountForLeagueActivity": false,
+    "specialEventsCountForRating": true
+  },
+  "matchRules": {
+    "byesCountForRating": false,
+    "intentionalDrawsCountForRating": false,
+    "unintentionalDrawsCountForRating": true
+  },
+  "privacy": {
+    "anonymousPlacementOnly": true,
+    "optInFile": "data/opt-ins.json"
+  }
+}

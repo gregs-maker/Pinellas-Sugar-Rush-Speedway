@@ -1,0 +1,18 @@
+{
+  "name": "pinellas-sugar-rush-speedway",
+  "version": "1.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Opt-in Pinellas Lorcana six-week player power rankings.",
+  "scripts": {
+    "sync": "node src/sync.js",
+    "start": "node src/server.js",
+    "test": "node --test",
+    "reset:sample": "node src/reset-sample.js",
+    "publish": "node src/publish.js",
+    "generate:key": "node src/generate-key.js"
+  },
+  "dependencies": {
+    "unofficial-ravensburger-playhub-api": "^0.3.1"
+  }
+}

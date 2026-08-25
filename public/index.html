@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pinellas Sugar Rush Speedway — Preview</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="crt"></div>
+<div class="arcade-shell">
+  <header class="hud">
+    <div class="hud-block left">
+      <div class="hud-label pink">PLAYER 1</div>
+      <div id="playerOneScore" class="hud-score">01684</div>
+      <div class="lives">♥ ♥ ♥</div>
+      <div class="game-over">GAME<br>OVER</div>
+    </div>
+
+    <div class="title-zone">
+      <div class="hud-label yellow">🏆 HIGH SCORE 🏆</div>
+      <div id="highScore" class="hud-score">01684</div>
+      <div id="highScoreName" class="high-name">PIXELMAGE</div>
+      <h1><span>PINELLAS</span><b>SUGAR RUSH</b><em>SPEEDWAY</em></h1>
+      <div class="subtitle">★ LORCANA PLAYER POWER RANKINGS ★</div>
+    </div>
+
+    <div class="hud-block right">
+      <div class="hud-label cyan">INSERT<br>QUARTER!</div>
+      <div class="coin">◉ <span>× 00</span></div>
+      <button id="joinButton" class="join-btn">JOIN THE LEADERBOARD</button>
+      <button id="manageButton" class="manage-btn">UPDATE / REMOVE MY NAME</button>
+    </div>
+  </header>
+
+  <main class="game-grid">
+    <section class="leaderboard-cabinet">
+      <div class="cabinet-top">
+        <span>★ LOCAL CIRCUIT</span><span>7 STORES</span><span>6 WEEK SEASON ★</span>
+      </div>
+      <div class="score-head">
+        <span>RANK</span><span>PLAYER</span><span>PWR</span><span>MATCH</span><span>GAME</span><span>TREND</span>
+      </div>
+      <div class="score-viewport-wrap">
+        <div id="leaderboard" class="score-viewport"></div>
+        <div class="scroll-rail">
+          <button id="scrollUp" aria-label="Scroll rankings up">▲</button>
+          <div class="rail-track"><div id="railThumb" class="rail-thumb"></div></div>
+          <button id="scrollDown" aria-label="Scroll rankings down">▼</button>
+        </div>
+      </div>
+      <div class="cabinet-bottom">★ KEEP PLAYING! IMPROVE YOUR RANK! ★</div>
+    </section>
+
+    <aside class="side-panels">
+      <section class="panel toggle-panel">
+        <label>
+          <span>SHOW ANONYMOUS PLACEMENTS</span>
+          <input id="anonToggle" type="checkbox" checked>
+          <span class="toggle"><i></i><b>ON</b></span>
+        </label>
+      </section>
+
+      <section class="panel">
+        <h2>HOW RANKINGS WORK</h2>
+        <ul>
+          <li>⭐ Beat stronger players to earn more points.</li>
+          <li>🍬 Game wins matter: 2–0 gets a bonus; 1–2 losses hurt less.</li>
+          <li>🕒 6 week rolling season.</li>
+          <li>🏆 Eligibility: 3 League Events + 8 Matches.</li>
+        </ul>
+        <p class="small">(Set Champs & Prereleases don’t count toward eligibility, but do count in ratings.)</p>
+      </section>
+
+      <section class="panel next-update">
+        <h2>NEXT UPDATE</h2>
+        <div class="date">📅 MONDAY</div>
+        <div class="cyan-text">Data updates weekly</div>
+      </section>
+
+      <section class="panel stores">
+        <h2>LOCAL CIRCUIT STORES</h2>
+        <div id="stores"></div>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="footer-hud">
+    <span>CREDIT 00</span>
+    <span>★ THANK YOU FOR PLAYING! ★</span>
+    <span>INSERT QUARTER</span>
+  </footer>
+</div>
+
+<div id="playerCard" class="modal hidden">
+  <div class="player-card">
+    <button class="close" data-close="playerCard">×</button>
+    <div class="tiny-label">PLAYER CARD</div>
+    <h3 id="cardName"></h3>
+    <div id="cardPower" class="card-power"></div>
+    <div id="cardStats"></div>
+  </div>
+</div>
+
+<div id="optInModal" class="modal hidden">
+  <div class="form-card">
+    <button class="close" data-close="optInModal">×</button>
+    <div class="tiny-label">PLAYER SELECT</div>
+    <h3>JOIN THE HIGH SCORE BOARD</h3>
+    <p class="warning">⚠ Enter your Play Hub name <strong>exactly</strong> as it appears in Ravensburger Play Hub. If you change your Play Hub name later, you must update it here too so your results continue to match correctly.</p>
+
+    <form id="optInForm">
+      <label>What would you like to do?
+        <select id="actionChoice">
+          <option>Join the leaderboard</option>
+          <option>Update my leaderboard name</option>
+          <option>Remove me from the leaderboard</option>
+        </select>
+      </label>
+
+      <label>Play Hub display name
+        <input id="playhubName" required placeholder="Exact Play Hub name">
+      </label>
+
+      <label>Public display name <span>(optional)</span>
+        <input id="publicName" placeholder="Leave blank to use Play Hub name">
+      </label>
+
+      <label class="consent">
+        <input id="consent" type="checkbox">
+        <span>I agree to have my name, rank, Power Rating, match/game record, and ranking movement displayed publicly.</span>
+      </label>
+
+      <button type="submit" class="submit-btn">SUBMIT PLAYER SELECT</button>
+      <p class="small">The leaderboard is live, but this request form is not connected yet. For the initial launch, opt-ins are added by the site moderator; self-service requests will be connected next.</p>
+    </form>
+
+    <div id="formSuccess" class="form-success hidden">✓ REQUEST READY — PREVIEW MODE</div>
+  </div>
+</div>
+
+<script type="module" src="./app.js"></script>
+</body>
+</html>

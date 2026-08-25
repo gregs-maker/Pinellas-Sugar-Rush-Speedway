@@ -1,0 +1,4 @@
+import http from "node:http";import fs from "node:fs";import path from "node:path";import {fileURLToPath} from "node:url";
+const here=path.dirname(fileURLToPath(import.meta.url)),pub=path.join(here,"..","public"),port=4174;
+const types={".html":"text/html",".js":"text/javascript",".css":"text/css",".json":"application/json"};
+http.createServer((req,res)=>{let p=req.url==="/"?"index.html":req.url.split("?")[0].replace(/^\/+/,"");p=path.join(pub,p);if(!p.startsWith(pub)){res.writeHead(403);return res.end()}fs.readFile(p,(e,b)=>{if(e){res.writeHead(404);return res.end("Not found")}res.writeHead(200,{"Content-Type":types[path.extname(p)]||"application/octet-stream"});res.end(b)})}).listen(port,()=>console.log(`Preview running at http://localhost:${port}`));
