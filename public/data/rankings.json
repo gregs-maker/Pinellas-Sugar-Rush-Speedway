@@ -163,12 +163,6 @@
   ],
   "diagnostics": {
     "eligiblePlayers": 29,
-    "optedInEligiblePlayers": 1,
-    "events": 32,
-    "totalRounds": 123,
-    "totalRatedMatches": 844,
-    "skippedByes": 52,
-    "skippedMissingIdentity": 0,
-    "fetchFailures": 0
+    "optedInEligiblePlayers": 1
   }
 }
