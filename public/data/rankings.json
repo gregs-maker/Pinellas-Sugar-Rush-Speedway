@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-05T14:45:58.865Z",
+  "generatedAt": "2026-10-12T15:32:05.911Z",
   "preview": false,
   "window": {
-    "start": "2026-08-24",
-    "end": "2026-10-05",
+    "start": "2026-08-31",
+    "end": "2026-10-12",
     "weeks": 6
   },
   "stores": [
@@ -26,7 +26,7 @@
   "highScore": {
     "rank": 2,
     "name": "kobac",
-    "rating": 1641
+    "rating": 1654
   },
   "players": [
     {
@@ -37,20 +37,20 @@
       "rank": 2,
       "optedIn": true,
       "name": "kobac",
-      "rating": 1641,
+      "rating": 1654,
       "previousRank": 2,
       "matches": {
-        "w": 30,
+        "w": 33,
         "l": 8,
         "d": 2
       },
       "games": {
-        "w": 65,
+        "w": 71,
         "l": 28
       },
-      "leagueEvents": 9,
-      "ratedEvents": 11,
-      "ratedMatches": 40
+      "leagueEvents": 10,
+      "ratedEvents": 12,
+      "ratedMatches": 43
     },
     {
       "rank": 3,
@@ -83,44 +83,59 @@
     {
       "rank": 10,
       "optedIn": true,
-      "name": "Mark",
-      "rating": 1537,
-      "previousRank": 9,
+      "name": "Greg - Vampire Potato",
+      "rating": 1524,
+      "previousRank": 18,
       "matches": {
-        "w": 27,
-        "l": 28,
-        "d": 2
+        "w": 8,
+        "l": 7,
+        "d": 1
       },
       "games": {
-        "w": 69,
-        "l": 66
+        "w": 19,
+        "l": 15
       },
-      "leagueEvents": 12,
-      "ratedEvents": 16,
-      "ratedMatches": 57
+      "leagueEvents": 7,
+      "ratedEvents": 7,
+      "ratedMatches": 16
     },
     {
       "rank": 11,
-      "optedIn": false
+      "optedIn": true,
+      "name": "Greg - Vampire Potato",
+      "rating": 1517,
+      "previousRank": 18,
+      "matches": {
+        "w": 7,
+        "l": 6,
+        "d": 0
+      },
+      "games": {
+        "w": 16,
+        "l": 14
+      },
+      "leagueEvents": 4,
+      "ratedEvents": 4,
+      "ratedMatches": 13
     },
     {
       "rank": 12,
       "optedIn": true,
-      "name": "Greg - Vampire Potato",
-      "rating": 1509,
-      "previousRank": 14,
+      "name": "Mark",
+      "rating": 1514,
+      "previousRank": 10,
       "matches": {
-        "w": 5,
-        "l": 5,
-        "d": 0
+        "w": 21,
+        "l": 27,
+        "d": 1
       },
       "games": {
-        "w": 12,
-        "l": 10
+        "w": 58,
+        "l": 63
       },
-      "leagueEvents": 3,
-      "ratedEvents": 3,
-      "ratedMatches": 10
+      "leagueEvents": 9,
+      "ratedEvents": 13,
+      "ratedMatches": 49
     },
     {
       "rank": 13,
@@ -144,22 +159,7 @@
     },
     {
       "rank": 18,
-      "optedIn": true,
-      "name": "Greg - Vampire Potato",
-      "rating": 1484,
-      "previousRank": 14,
-      "matches": {
-        "w": 9,
-        "l": 13,
-        "d": 1
-      },
-      "games": {
-        "w": 26,
-        "l": 28
-      },
-      "leagueEvents": 9,
-      "ratedEvents": 9,
-      "ratedMatches": 23
+      "optedIn": false
     },
     {
       "rank": 19,
@@ -179,7 +179,22 @@
     },
     {
       "rank": 23,
-      "optedIn": false
+      "optedIn": true,
+      "name": "Inkchantress (Ashley)",
+      "rating": 1449,
+      "previousRank": 27,
+      "matches": {
+        "w": 11,
+        "l": 18,
+        "d": 0
+      },
+      "games": {
+        "w": 29,
+        "l": 42
+      },
+      "leagueEvents": 11,
+      "ratedEvents": 11,
+      "ratedMatches": 29
     },
     {
       "rank": 24,
@@ -195,22 +210,7 @@
     },
     {
       "rank": 27,
-      "optedIn": true,
-      "name": "Inkchantress (Ashley)",
-      "rating": 1443,
-      "previousRank": 22,
-      "matches": {
-        "w": 10,
-        "l": 20,
-        "d": 0
-      },
-      "games": {
-        "w": 29,
-        "l": 45
-      },
-      "leagueEvents": 12,
-      "ratedEvents": 12,
-      "ratedMatches": 30
+      "optedIn": false
     },
     {
       "rank": 28,
@@ -223,23 +223,15 @@
     {
       "rank": 30,
       "optedIn": false
-    },
-    {
-      "rank": 31,
-      "optedIn": false
-    },
-    {
-      "rank": 32,
-      "optedIn": false
     }
   ],
   "diagnostics": {
-    "eligiblePlayers": 32,
+    "eligiblePlayers": 30,
     "optedInEligiblePlayers": 5,
-    "events": 27,
-    "totalRounds": 108,
-    "totalRatedMatches": 501,
-    "skippedByes": 48,
+    "events": 25,
+    "totalRounds": 100,
+    "totalRatedMatches": 464,
+    "skippedByes": 45,
     "skippedMissingIdentity": 0,
     "fetchFailures": 0
   }
